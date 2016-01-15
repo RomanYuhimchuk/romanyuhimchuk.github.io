@@ -1,0 +1,401 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$main-color:#282828;
+$sec-color:#ff6d6d;
+$back-color:#ececec;
+$opacity:0.6;
+
+@mixin placeholder ($color,$transform,$align) {
+		::-webkit-input-placeholder {color:$color;text-transform: $transform;vertical-align: $align;}
+		::-moz-placeholder {color:$color;text-transform: $transform; vertical-align: $align;}/* Firefox 19+ */
+		:-moz-placeholder {color:$color;text-transform: $transform; vertical-align: $align;}/* Firefox 18- */
+		:-ms-input-placeholder {color:$color;text-transform: $transform; vertical-align: $align;}
+}
+
+body {
+	font-family: 'Exo', sans-serif;
+	font-weight: 400;
+}
+h1 {
+	font-size: 60px;
+	color: $main-color;
+	font-weight: 100;
+}
+h2 {
+	font-size: 40px;
+	color: $main-color;
+	font-weight: 500;
+}
+h3 {
+	font-size: 22px;
+	color: $main-color;
+	font-weight: 500;
+}
+h4 {
+	font-size: 16px;
+	color: $sec-color;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+p {
+	font-size: 16px;
+	color: $main-color;
+	line-height: 26px;
+	font-weight: 500;
+}
+a, a:hover, a:link {
+	text-decoration: none;
+	color: $main-color;
+}
+.cl-btn {
+	background: $sec-color;
+	color: white;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+header {
+	background: url(../images/back_01.jpg) no-repeat top center;
+	background-size: cover;
+	text-align: center;
+	padding: 220px 23%;
+	h1{line-height: 70px;}
+	a{
+		display: block;
+		margin: 50px auto 40px auto;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background:#8286a3;
+		text-align: center;
+		line-height: 60px;
+		vertical-align: middle;
+		&:hover {background: $sec-color;}
+		i{
+			color: white;
+			position: relative;
+			left: 2px;
+		}
+	}
+	.cl-btn {
+		padding: 19px 50px;
+		margin-bottom: 20px;
+	}
+	p {
+		opacity: $opacity;
+		font-size: 14px;
+	}
+
+}
+.cl-design {
+	.cl-design-right {
+		width: 40%;
+		height: 725px;
+		background: url(../images/back_04.png) no-repeat bottom right $back-color;
+		background-size: contain;
+	}
+	.cl-design-left {
+		padding-top: 190px;
+		padding-left: 10%;
+		padding-right: 50%;
+		h4{}
+		h2{ margin-top: 20px;
+			margin-bottom: 47px;
+			span{color: $sec-color;}
+		}
+		p {
+			opacity: $opacity;
+			margin-bottom: 30px;
+		}
+	}
+}
+.cl-features {
+	background: url(../images/back_05.jpg) no-repeat top center;
+	background-size: cover;
+	text-align: center;
+	padding-top: 137px;
+	padding-bottom: 170px;
+	h2{
+		margin-top: 17px;
+		margin-bottom: 80px;
+	}
+	.row {
+		.col-md-4 {margin-bottom: 20px;
+			img{}
+			h3{
+				margin-top: 30px;
+				margin-bottom: 20px;
+			}
+			p{opacity: $opacity;}
+		}
+	}
+}
+.cl-responsive {
+	background: url(../images/back_06.png) no-repeat top left;
+	background-size: contain;
+	padding: 90px 4.5%;
+	img {float: left;}
+	.cl-responsive-right {
+		padding-top: 50px;
+		padding-left: 650px;
+		h4{}
+		h2{margin-top: 27px;
+			margin-bottom: 37px;
+			span{color: $sec-color;}
+		}
+		p{opacity: $opacity;}
+	}
+}
+.cl-founders {
+	background: url(../images/back_08.jpg) no-repeat top center;
+	background-size: cover;
+	text-align: center;
+	padding-top: 110px;
+	padding-bottom: 80px;
+	.container {margin-bottom: 70px;
+		.col-md-4 {
+			margin-bottom: 40px;
+			img {
+				width: 77px;
+				height: 77px;
+				margin-bottom: 27px;
+			}
+			h3{
+				color: white;
+				text-transform: capitalize;
+			}
+			h4{
+				text-transform: capitalize;
+				margin-top: 10px;
+				margin-bottom: 35px
+			}
+			p{
+				font-weight: 400;
+				font-style: italic;
+				color: white;
+				opacity: $opacity;
+				padding: 0px 15px;  
+			}
+		}
+	}
+	.cl-founders-logos {
+		img{
+			margin-right: 4%;
+			&:last-child {margin-right: 0px;}
+		}
+	}
+}
+.cl-center {
+	background: #f6f5f3;
+	text-align: center;
+	padding-top: 105px;
+	h4{}
+	h2{margin-top: 18px;margin-bottom: 45px;}
+	p{
+		opacity: $opacity;
+		margin-bottom: 100px;
+		padding: 0px 27%;
+	}
+	img{margin: auto;}
+}
+.cl-form {
+	background: #323969;
+	padding-top:97px;
+	padding-bottom: 85px;
+	text-align: center;
+	h4{}
+	h2{
+		color: white;
+		margin-top: 15px;
+		margin-bottom: 17px;
+	}
+	form{
+		color: #f6f5f3;
+		font-weight: 400;
+		@include placeholder (#f6f5f3,uppercase,middle);
+		margin-bottom: 50px;
+		input{
+			background: #474d78;
+			border-radius: 2px;
+			border: 1px solid #999cb4;
+			padding: 15px 0px 12px 0px;
+			width: 100%;
+			font-size: 16px;
+			line-height: 16px;
+			margin-top: 84px;
+			padding-left: 28px;
+		}
+		span {
+			text-align: left;
+			display: inline-block;
+			margin-bottom: 44px;
+			img{
+				text-align: left;
+				position: relative;
+				top: 28px;
+				margin-right: 20px;
+			}
+		}
+		.cl-btn{
+			width: 100%;
+			padding: 14px 0px;
+			box-shadow: 0 4px 3px rgba(0,0,0,0.25);
+			&:hover {box-shadow:0 4px 15px rgba(0,0,0,0.5);}
+			&:active {box-shadow:none; outline: none;}
+		}
+	}
+	p{
+		color: #f6f5f3;
+		font-weight: 400;
+		opacity: $opacity;
+		a{
+			color: #f6f5f3;
+			text-decoration: underline;
+			&:hover {color: $sec-color;}
+		}
+	}
+}
+footer {
+	padding-top: 75px;
+	padding-bottom: 100px;
+	background: url(../images/back_07.png) no-repeat top right;
+	background-size: contain;
+	.row{
+		.cl-footer-logo{
+			font-family: 'lato',sans-serif;
+			font-size: 27px;
+			margin-bottom: 14px;
+			i{	
+				position: relative;
+				top:9px;
+				font-size: 56px;
+				color: $sec-color;
+				margin-left:5px;
+				span{
+					position: relative;
+					right: 44px;
+					top: -10px;
+					font-family: 'lato',sans-serif;
+					font-size: 27px;
+					color: white;
+				}
+			}
+		}
+		p {
+			opacity: 0.56;
+		}
+		h3{
+			text-transform: capitalize;
+			margin-top: 27px;
+			margin-bottom: 25px;
+		}
+		.col-md-2 a{
+			font-size: 14;
+			font-weight: 400;
+			opacity: $opacity;
+			display: block;
+			text-transform: capitalize;
+			margin-bottom: 15px;
+			&:hover {color: $sec-color;}
+		}		
+		form {
+			position: relative;
+			margin-bottom: 19px;
+			input{
+				background: #f6f6f6;
+				border: 1px solid #b8b8bf;
+				padding: 14px 28px 8px 28px;
+				border-radius:3px;
+				width: 100%;
+				&:focus {outline: none;}
+			}
+			.cl-btn{
+				position: absolute;
+				top:0px;
+				right: 0px;
+				width: 45px;
+				height: 45px;
+				text-align: center;
+				box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+				&:active {
+					box-shadow: none;
+					outline: none;
+					border: none;
+				}
+			}
+		}
+		.cl-footer-logos {
+			text-align: center;
+			a { 
+			margin-right:28px;
+			i {color: #cbcbcb;}
+			&:last-child {margin-right: 0px;}
+			&:hover i{color: $sec-color;}
+
+
+			}
+		}
+
+	}
+}
+@media screen and (max-width: 992px) {
+	.cl-features {
+     background: url(../images/back_05.jpg) no-repeat top right;
+     background-size: cover;
+ }
+ footer { 
+ 	.col-sm-6 {
+		text-align: center;
+ 	}
+ }
+ .cl-design {
+ 	.cl-design-left {padding-top: 80px;}
+ }
+ .cl-responsive {
+ 	padding: 50px 0px;
+ 	background-position: bottom left;
+ 	img {
+ 		float: none;
+ 		display: block;
+ 		margin: auto;
+ 	}
+ 	.cl-responsive-right {
+ 		padding-left: 16%;
+ 		padding-right: 16%;
+ 	}
+ }
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		padding: 100px 5%;
+	}
+	footer {
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		.container .row a:hover {color: $main-color; opacity: 1;}
+	}
+	.cl-design {
+ 	.cl-design-left {
+ 		background: url(../images/back_04.png) no-repeat bottom right $back-color;
+		background-size: contain;
+		padding: 50px;
+ 	}
+ 	.cl-design-right {display: none;}
+ }
+ .cl-responsive .cl-responsive-right {
+ 		padding-left: 9%;
+ 		padding-right: 9%;
+ 	}
+}
+@media screen and (max-width: 440px) {
+	.cl-features {
+     background: url(../images/back_05.jpg) no-repeat 90% 0%;
+     background-size: cover;
+ }
+}

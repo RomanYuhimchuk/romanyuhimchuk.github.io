@@ -1,0 +1,427 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+$color-main: white;
+$color-sec: #afafaf;
+$btn-color: #3cc395;
+$back-color: #3cc3b5;
+$brdr-color: #e4e4e4;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+body{
+	background: white;
+	color: $color-main;
+	font-family: 'oswald',sans-serif;
+}
+h1 {
+	font-size: 48px;
+	line-height: 54px;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 24px;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 19px;
+	text-transform: uppercase;
+}
+a, a:hover, a:link {text-decoration: none; outline: none;}
+p {
+	font-family: 'open sans',sans-serif;
+	font-size:17px;
+	line-height: 28px;
+}
+.lvs-btn{
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 14px;
+		color: $color-main;
+		padding: 7px 12px;
+		background: $btn-color;
+		border: 2px solid $btn-color;
+		@include border-radius(5px);
+		&:hover {
+			color: $btn-color;
+			background: none;
+			}
+		}
+
+header {
+	position: relative;
+	.lvs-hidden-menu{
+		display: none;
+		button{
+			position: absolute;
+			right: 5px;
+			top:22px;
+			background: #4ccfc1;
+			border: 3px solid #4ccfc1;
+			i{color: $color-main;}
+			&:hover, &:active, &:focus {
+				background: none;
+				border-color: $btn-color;
+				i{color: $btn-color;}
+				outline: none;
+			}
+		}
+		.well {
+			margin-bottom: 0px;
+			border-radius: 0px;
+			background: #4ccfc1;
+			border: 4px solid $btn-color;
+			padding-left: 12.5%;
+			padding-top: 35px;
+			ul{
+				li{
+					a {
+					text-transform: uppercase;
+					color: $color-main;
+					font-size: 24px;
+					&:hover {color: $btn-color;}
+				
+					}
+				}
+			}
+		}
+	}
+	.lvs-top-menu { 
+		padding: 27px 12.5% 8px 12.5%;
+	form{
+		position: relative;
+		vertical-align: top;
+		text-align: center;
+		display: inline-block;
+		margin-top: 7px;
+		margin-left: 12.5%;
+		width: 40%;
+		input{
+			border: 1px solid $brdr-color;
+			outline: none;
+			color: $brdr-color;
+			width: 100%;
+			padding-left: 20px;
+			height: 30px;
+		}
+		button{
+			border: none;
+			background: none;
+			i{
+				color: $brdr-color;
+				outline: none;border: none;
+				position: absolute;
+				right: 10px;
+				top: 5px;
+			}
+			&:hover i{color: $btn-color;}
+		}
+	}
+	.lvs-kart{
+		i{
+			color: $back-color;
+			font-size: 36px;
+		}
+		span {
+			color: #a1a1a1;
+			font-size: 33px;
+			&:before {
+				content: '$';
+				margin-left:15px; 
+			}
+		}
+	}
+}
+	.lvs-menu {
+		background: #4ccfc1;
+		ul{	
+			padding: 10px 0px;
+			text-align: center;
+			li{display: inline-block;
+				a{
+					text-transform: uppercase;
+					color: $color-main;
+					
+					&:hover {color: $btn-color;}
+
+				}
+				&:after {
+						content: '|';
+						margin: 0px 18px;
+					}
+				&:last-child:after {
+					content: '';
+					margin: 0px;
+				}
+			}
+		}
+	}
+}
+.lvs-banner {
+	box-shadow:inset 0px 2px 2px rgba(0,0,0,0.2);
+	background: url(../images/back1.jpg) top center;
+	.lvs-banner-slide{
+	ul.slick-dots {
+		margin-bottom: 20px;
+		text-align: center;
+		li{display: inline-block;
+			button {
+				background: none;
+				border:none;
+				color: transparent;
+				&:focus {outline: none;}
+			&::before {
+				font-family: 'fontawesome';
+				content: '\f111';
+				font-size: 19px;
+				color: white;
+				opacity: 1;
+			}
+			}
+		}
+		li.slick-active button::before {color: #7ad4cd;}
+	}
+	.row {
+		padding-top: 64px;
+		padding-bottom: 50px;
+	.col-md-5 {
+		img{margin: auto;}
+	}
+	.col-md-7 {
+
+		h1{ width: 72%}
+		p{	
+			width: 72%;
+			margin-top:25px;
+			margin-bottom: 30px;
+		}
+		.lvs-btn{
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: 20px;
+			color: $color-main;
+			background: none;
+			border: 3px solid $color-main;
+			padding: 10px 25px;
+			@include border-radius(5px);
+			&:hover {
+				color: $btn-color;
+				border-color: $btn-color;
+			}
+		}
+	}
+	}
+	}
+}
+.lvs-slider {
+	text-align: center;
+	position: relative;
+	.lvs-slider-content {
+		box-sizing:border-box;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		display: inline-block;
+		border-right: 1px solid $brdr-color;
+		&:last-child {border-right: none;}
+		img{
+			display: inline-block;
+			margin-left: 50px;
+			}
+		.lvs-slider-text {
+			margin-left: 40px;
+			vertical-align: top;
+			width: 90px;
+			display: inline-block;
+			text-align: left;
+			h3{	
+				color: $color-sec;
+				margin: 21px 0px;
+			}
+			.lvs-btn {}
+		}
+	}
+	button.slick-next {
+		border:none;
+		background: none;
+		width: 1px;
+		color: transparent;
+		position: absolute;
+		right: 60px;
+		top: 44%;
+	 &:focus {outline: none;}
+	 &::after {
+		font-family: 'fontawesome';
+		content: '\f054';
+		color:$brdr-color;
+		font-size: 40px;
+		}
+	}
+	button.slick-prev {
+		border:none;
+		background: none;
+		width: 20px;
+		color: transparent;
+		position: absolute;
+		left: 5px;
+		top: 44%;
+		z-index: 100;
+	 &:focus {outline: none;}
+	 &::before {
+		font-family: 'fontawesome';
+		content: '\f053';
+		color:$brdr-color;
+		font-size: 40px;
+		}
+	}
+}
+section {
+	h2 {
+		box-shadow:inset 0px 2px 2px rgba(0,0,0,0.2);
+		background: url(../images/back1.jpg) top center;
+		padding: 24px 0px 21px 12.5%;
+	}
+}
+.lvs-featured {
+	text-align: center;
+	padding-top: 47px;
+	padding-bottom: 73px;
+	.container {
+		.row {
+			.col-md-4{
+				margin-bottom: 50px;
+				&:first-child .lvs-featured-content {float: right;}
+				&:nth-child(4) .lvs-featured-content {float: right;} 
+				&:last-child .lvs-featured-content {float: left;}
+				&:nth-child(3) .lvs-featured-content {float: left;}
+				.lvs-featured-content{
+					width: 255px;
+					margin: auto;
+					border: 1px solid $brdr-color;
+					border-bottom: 5px solid $btn-color;
+					border-radius: 2px 2px 0px 0px;
+					padding: 30px 0px;
+					img{}
+					h3{
+						color: $color-sec;
+						margin: 12px 0px;
+					}
+					div { width: 165px;
+						margin: auto;
+						text-align: left;
+					.lvs-price{
+						position: relative;
+						color: $color-sec;
+						font-size: 20px;
+						text-align: left;
+						top: 6px;
+						&:before {content: '$';}
+
+					}
+					.lvs-btn{ float: right;}
+					}
+				}
+			}
+		}
+	}
+}
+footer {
+	background: $back-color;
+	padding-top: 42px;
+	.row{
+		.col-md-3 {
+		margin-bottom: 42px;
+		h3{
+			margin-left: 20%;
+			margin-bottom: 25px;
+		}
+		ul{
+			margin-left: 20%;
+			font-family: 'open sans',sans-serif;
+			text-transform: capitalize;
+			li{
+				margin-bottom: 17px;
+				&:last-child {margin-bottom:0px;} 
+			}
+		}
+	}
+	}
+	>div:last-child{
+		background: #2da89b;
+		text-align: center;
+		font-size: 15px;
+		padding-top: 16px;
+		padding-bottom: 14px;
+
+	}
+}
+
+@media screen and (max-width: 1000px) {
+header {
+	.lvs-menu {display: none;}
+	.lvs-hidden-menu {display: block;}
+	.lvs-top-menu {
+		padding-left: 10px;
+			img {position: relative; top: -3px;}
+			form {
+				margin-left: 7.5%;
+			}
+		}
+}
+}
+
+@media screen and (max-width: 991px) {
+
+	.lvs-featured {
+		.lvs-featured-content {
+			float: none !important;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.lvs-banner {text-align: center;
+			h1{margin: auto;
+				margin-top: 30px;
+			}
+			p{margin: auto;}
+	}
+	header {
+		.lvs-top-menu {
+			padding-left: 5px;
+			padding-right: 65px;
+			form {
+				position: absolute;
+				right: 5px;
+				top:78px;
+				width: 98%;
+				z-index: 100;
+				input {
+					background: rgba(76, 207, 193,0.5);
+					border-color: $btn-color;
+
+				}
+			}
+		}
+	}
+	}
+@media screen and (max-width: 422px) {
+header {
+		.lvs-top-menu {
+			.lvs-kart {
+				margin-top: 8px;
+				span , i {font-size: 19px;}
+				span::before {margin-left: 5px;}
+			}
+		}
+}
+}
