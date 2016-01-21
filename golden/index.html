@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Golden</title>
+ <!-- CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+ <link href="style.css" rel="stylesheet" type="text/css">
+ <!-- JS -->
+ <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+ <script> 
+$(document).ready(function(){
+    $(".gldn-menu-top span").click(function(){
+        $(".gldn-menu-top ul").css({
+        	"position":"absolute",
+        	"top":"30px",
+        	"right":"10px"
+        	});
+        $(".gldn-menu-top ul li").css({
+        	"display":"block",
+        	"margin-bottom":"10px"
+        	});
+        $(".gldn-menu-top ul").slideToggle("slow");
+    });
+});
+</script>
+ </head>
+<body>
+<header>
+<div class="container">
+	<div class="gldn-menu">
+		<div class="gldn-menu-top clearfix">
+		<img src="images/logo.png" class="pull-left" alt="logo">
+		<ul class="pull-right">
+			<li><a href="#">home</a></li>
+			<li><a href="#">services</a></li>
+			<li><a href="#">portfolio</a></li>
+			<li><a href="#">about</a></li>
+			<li><a href="#">contact</a></li>
+		</ul>
+		<span><i class="fa fa-bars fa-2x"></i></span>
+		</div>
+		<div>Welcome To Our Studio!</div>
+		<h1>It’s nice to Meet you</h1>
+		<a href="#" class="gldn-btn">tell me more</a>
+	</div>
+</div>
+</header>
+<section>
+<div class="gldn-services">
+	<div class="container">
+	<h2>services</h2>
+	<p>Proin iaculis purus consequat sem cure. </p>
+	<div class="row">
+		<div class="col-md-4 col-sm-4">
+			<div class="gldn-services-round">
+				<i class="fa fa-shopping-basket fa-3x"></i>
+			</div>
+			<h3>E-Commerce</h3>
+			<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+		</div>
+		<div class="col-md-4 col-sm-4">
+			<div class="gldn-services-round">
+				<i class="fa fa-laptop fa-3x"></i>
+			</div>
+			<h3>responsive web</h3>
+			<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+		</div>
+		<div class="col-md-4 col-sm-4">
+			<div class="gldn-services-round">
+				<i class="fa fa-lock fa-3x"></i>
+			</div>
+			<h3>web security</h3>
+			<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+		</div>
+	</div>
+	</div>
+</div>
+<div class="gldn-portfolio">
+	<div class="container">
+		<h2>our portfolio</h2>
+		<p>Proin iaculis purus consequat sem cure.</p>
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<img src="images/prtfl_1.jpg" alt="portfolio image">
+				<h3>ebony &amp; ivory</h3>
+				<p>branding</p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<img src="images/prtfl_2.jpg" alt="portfolio image">
+				<h3>smart stationary</h3>
+				<p>print design</p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<img src="images/prtfl_3.jpg" alt="portfolio image">
+				<h3>clever poster</h3>
+				<p>print design</p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<img src="images/prtfl_4.jpg" alt="portfolio image">
+				<h3>vinyl record</h3>
+				<p>Product Mock-Up</p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<img src="images/prtfl_5.jpg" alt="portfolio image">
+				<h3>treehouse template</h3>
+				<p>web design</p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<img src="images/prtfl_6.jpg" alt="portfolio image">
+				<h3>burned logo</h3>
+				<p>branding</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="gldn-about">
+	<div class="container">
+	<h2>about us</h2>
+	<p>Proin iaculis purus consequat sem cure.</p>
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-5 col-xs-12">
+				<img src="images/back_1.jpg" class="gldn-about-hidden" alt="timeline photo">
+				<h3>july 2010<br/>Our Humble Beginnings</h3>
+				<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div>
+				<span><img src="images/back_1.jpg" alt="timeline photo"></span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-push-4 col-md-4 col-sm-push-6 col-sm-6 col-xs-12">
+				<div>
+				<span><img src="images/back_2.jpg" alt="timeline photo"></span>
+				</div>
+			</div>
+			<div class="col-md-3 col-md-push-3 col-sm-5 col-sm-offset-1 col-sm-pull-6 col-xs-12">
+				<img src="images/back_2.jpg" class="gldn-about-hidden" alt="timeline photo">
+				<h3>january 2011<br/>Facing Startup Battles</h3>
+				<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-5 col-xs-12">
+				<img src="images/back_3.jpg" class="gldn-about-hidden" alt="timeline photo">
+				<h3>december 2012<br/>Enter The Dark Days</h3>
+				<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni.</p>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div>
+				<span><img src="images/back_3.jpg" alt="timeline photo"></span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-push-4 col-md-4 col-sm-push-6 col-sm-6 col-xs-12">
+				<div>
+				<span><img src="images/back_4.jpg" alt="timeline photo"></span>
+				</div>
+			</div>
+			<div class="col-md-3 col-md-push-3 col-sm-5 col-sm-offset-1 col-sm-pull-6 col-xs-12">
+				<img src="images/back_4.jpg" class="gldn-about-hidden" alt="timeline photo">
+				<h3>february 2014<br/>Our Triumph</h3>
+				<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-6 col-xs-12">
+				<span>our story continues ...</span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="gldn-team">
+	<div class="container">
+		<h2>our amazing team</h2>
+		<p>Proin iaculis purus consequat sem cure.</p>
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+				<img src="images/userpic1.jpg" alt="userpic">
+				<h4>Iggy Pop</h4>
+				<p>marketer</p>
+				<a href="#" class="gldn-rnd-social"><i class="fa fa-twitter fa-lg"></i></a>
+				<a href="#" class="gldn-rnd-social"><i class="fa fa-facebook fa-lg"></i></a>
+				<a href="#" class="gldn-rnd-social"><i class="fa fa-pinterest-p fa-lg"></i></a>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<img src="images/userpic2.jpg" alt="userpic">
+				<h4>David Bowie</h4>
+				<p>coder</p>
+				<a href="#" class="gldn-rnd-social"><i class="fa fa-twitter fa-lg"></i></a>
+				<a href="#" class="gldn-rnd-social"><i class="fa fa-facebook fa-lg"></i></a>
+				<a href="#" class="gldn-rnd-social"><i class="fa fa-google-plus fa-lg"></i></a>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<img src="images/userpic3.jpg" alt="userpic">
+				<h4>sid vicious</h4>
+				<p>graphic designer</p>
+				<a href="#" class="gldn-rnd-social"><i class="fa fa-facebook fa-lg"></i></a>
+				<a href="#" class="gldn-rnd-social"><i class="fa fa-pinterest-p fa-lg"></i></a>
+			</div>
+		</div>
+		<p>Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+	</div>
+</div>
+<div class="gldn-partners">
+	<img src="images/prtnr_1.png" alt="partner logo">
+	<img src="images/prtnr_2.png" alt="partner logo">
+	<img src="images/prtnr_3.png" alt="partner logo">
+	<img src="images/prtnr_4.png" alt="partner logo">
+</div>
+<div class="gldn-contact">
+	<div class="container">
+	<h2>contact us</h2>
+	<p>Proin iaculis purus consequat sem cure.</p>
+	<form method="get" action="#">
+		<div class="row">
+			<div class="col-md-6">
+				<input type="text" name="name" placeholder="your name*">
+				<input type="email" name="email" placeholder="your e-mail*">
+				<input type="text" name="subject" placeholder="subject">
+			</div>
+			<div class="col-md-6">
+				<textarea name="text" placeholder="your message*"></textarea>
+			</div>
+		</div>
+		<button type="submit" class="gldn-btn">send message</button>
+	</form>
+	</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<a href="#" class="gldn-rnd-social"><i class="fa fa-twitter fa-lg"></i></a>
+<a href="#" class="gldn-rnd-social"><i class="fa fa-facebook fa-lg"></i></a>
+<a href="#" class="gldn-rnd-social"><i class="fa fa-pinterest-p fa-lg"></i></a>
+<a href="#" class="gldn-rnd-social"><i class="fa fa-google-plus fa-lg"></i></a>
+<span>© Copyright 2014 FreebiesXpress.com</span>
+</div>
+</footer>
+</body>
+</html>
