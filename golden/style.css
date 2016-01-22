@@ -149,6 +149,9 @@ h2+p {
 	margin-bottom: 50px;
 	text-transform: capitalize;
 }
+.gldn-portfolio a:hover img{
+	box-shadow:5px 5px 10px rgba(0,0,0,0.3);}
+
 .gldn-about .row:nth-child(odd) div:first-child {
 	text-align: right;
 }
@@ -288,10 +291,15 @@ h2+p {
 	margin-bottom: 30px;
 	padding-left: 21px;
 } 
+.gldn-contact input:focus, .gldn-contact textarea:focus {
+	outline-color: #fed136;
+	}
 .gldn-contact textarea {
 	height: 213px;
 	padding-top: 13px
 }
+.gldn-contact form button:active {outline: none;}
+
 ::-webkit-input-placeholder {font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase;}
 ::-moz-placeholder          {font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase;}/* Firefox 19+ */
 :-moz-placeholder           {font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase;}/* Firefox 18- */
